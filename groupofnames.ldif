@@ -1,0 +1,5 @@
+dn: cn=pwapp,ou=groups,dc=cs,dc=college,dc=edu
+objectclass: groupofnames
+cn: pwapp
+description: pw app admins
+member:

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# this script goes in /etc/letsencrypt/renewal-hooks/post
+
+# make keys readable by openldap
+cd /etc/letsencrypt
+chgrp -R openldap live
+chgrp -R openldap archive
+chmod -R g+rX live
+chmod -R g+rX archive

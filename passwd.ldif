@@ -1,0 +1,6 @@
+dn: cn=config
+add: olcPasswordHash
+olcPasswordHash: {CRYPT}
+-
+add: olcPasswordCryptSaltFormat
+olcPasswordCryptSaltFormat: $6$%.12s

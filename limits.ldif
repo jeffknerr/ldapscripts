@@ -1,0 +1,7 @@
+dn: cn=config
+changetype: modify
+replace: olcSizeLimit
+olcSizeLimit: 8000
+-
+replace: olcTimeLimit
+olcTimeLimit: 3500

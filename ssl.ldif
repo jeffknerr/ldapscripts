@@ -1,0 +1,10 @@
+dn: cn=config
+changetype: modify
+replace: olcTLSCertificateFile
+olcTLSCertificateFile: /etc/letsencrypt/live/ldap.cs.college.edu/cert.pem
+-
+replace: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/letsencrypt/live/ldap.cs.college.edu/privkey.pem
+-
+replace: olcTLSCACertificateFile
+olcTLSCACertificateFile: /etc/letsencrypt/live/ldap.cs.college.edu/chain.pem

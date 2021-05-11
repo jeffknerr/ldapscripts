@@ -1,0 +1,12 @@
+dn: uid=user1,ou=people,dc=cs,dc=college,dc=edu
+changetype: modify
+add: memberOf
+memberOf: cn=pwapp,ou=groups,dc=cs,dc=college,dc=edu
+-
+
+dn: cn=pwapp,ou=groups,dc=cs,dc=college,dc=edu
+changetype: modify
+add: member
+member: uid=user1,ou=people,dc=cs,dc=college,dc=edu
+-
+

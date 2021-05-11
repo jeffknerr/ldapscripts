@@ -1,0 +1,9 @@
+
+dn: ou=people,dc=cs,dc=college,dc=edu
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=cs,dc=college,dc=edu
+objectClass: organizationalUnit
+ou: groups 
+

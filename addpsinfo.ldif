@@ -1,0 +1,12 @@
+dn: uid=testf205,ou=people,dc=cs,dc=swarthmore,dc=edu
+changetype: modify
+add: objectClass
+objectClass: CSUser
+-
+add: csAgreed
+csAgreed: TRUE
+-
+add: csLastSeen
+csLastSeen: 20140102030405.678Z
+-
+

@@ -21,12 +21,7 @@ do
     else
         NAME=`echo $NAME | sed -e "s/%/ /g"`
     fi
-    # SN is wrong if it has a middle initial...Barack H. Obama
-    SN=`echo $NAME | awk '{print $2}'`
-    if [ ! "$SN" ]
-    then
-        SN=$NAME
-    fi
+    SN=`echo $line|awk -F: '{print $5}'| awk -F% '{print $(NF)}'`
     GIVEN=`echo $NAME | awk '{print $1}'`
     UID2=`echo $line | cut -d: -f3`
     GID=`echo $line | cut -d: -f4`

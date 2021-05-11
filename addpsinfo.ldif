@@ -1,4 +1,4 @@
-dn: uid=testf205,ou=people,dc=cs,dc=swarthmore,dc=edu
+dn: uid=user3,ou=people,dc=cs,dc=college,dc=edu
 changetype: modify
 add: objectClass
 objectClass: CSUser

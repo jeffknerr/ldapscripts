@@ -22,6 +22,6 @@ files=("access.ldif" "addpsinfo.ldif" "base.ldif" \
 for f in ${files[*]};
 do
     echo $f
-    sed -i 's/college/$NEWC/g' $f
+    sed -i "s/college/$NEWC/g" $f
 done
 
